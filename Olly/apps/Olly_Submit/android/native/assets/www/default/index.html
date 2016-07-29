@@ -1,0 +1,481 @@
+<!DOCTYPE HTML><html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Olly_Submit</title>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" name="viewport">
+<!--
+    			<link rel="shortcut icon" href="images/favicon.png">
+    			<link rel="apple-touch-icon" href="images/apple-touch-icon.png"> 
+    		-->
+        <link href="worklight/worklight.css" rel="stylesheet">
+        <link href="jqueryMobile/jquery.mobile-1.4.5.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="css/bootstrap-material-datetimepicker.css" rel="stylesheet">
+        <script>
+		// Define WL namespace.
+		var WL = WL ? WL : {};
+		/**
+		 * WLClient configuration variables.
+		 * Values are injected by the deployer that packs the gadget.
+		 */
+		 WL.StaticAppProps = {
+   "APP_DISPLAY_NAME": "Olly_Submit",
+   "APP_ID": "Olly_Submit",
+   "APP_SERVICES_URL": "\/apps\/services\/",
+   "APP_VERSION": "1.0",
+   "ENVIRONMENT": "android",
+   "LOGIN_DISPLAY_TYPE": "embedded",
+   "WORKLIGHT_NATIVE_VERSION": "1258641523",
+   "WORKLIGHT_PLATFORM_VERSION": "7.1.0.0",
+   "WORKLIGHT_ROOT_URL": "\/apps\/services\/api\/Olly_Submit\/android\/"
+};
+</script>
+		<script src="worklight/cordova.js"></script>
+		<script src="worklight/wljq.js"></script>
+		<script src="worklight/worklight.js"></script>
+		<script src="worklight/checksum.js"></script>
+		<script src="worklight/jsonstore.js"></script>
+		<script>
+	window.$ = window.jQuery = WLJQ;
+</script>
+<script src="jqueryMobile/jquery.mobile-1.4.5.js"></script>
+<script src="js/material.js"></script>
+<script src="js/moment-with-locales.min.js"></script>
+<script src="js/bootstrap-material-datetimepicker.js"></script>
+    </head>
+    <body style="text-align: center">
+	<!--<div style="margin-bottom: 20%;" class="w3-container bottom_footer">-->
+	<!--<h1>OLLY</h1>-->
+	<!--<p>On/Off</p>-->
+	<!--</div>-->
+	<!--<div class="w3-row-padding" style="margin-top: 20%;">-->
+	<!--<div class="w3-third">-->
+	<!--<img src="" width="100" height="100">-->
+	<!--</div>-->
+	<!--</div>-->
+        <div class="hide page_app " data-role="page" id="login_pageone">
+            <div class="header_yellow" data-role="header"></div>
+            <div class="ui-content" data-role="main">
+                <img alt="FEDBANK OLLY" src="images/fedbank_logo.png" style="margin-top: 30px; width: 60%;">
+			<form class="center_content" method="post" name="login_form">
+                    <div class="ui-field-contain">
+                        <input class="input_text" data-role="none" id="mpin" name="fullname" placeholder="MPIN" style="margin-top: 20px;" type="number">
+                        <p align="left" class="hide err" id="err_mpin" style="margin-top: -1px;">No account is associated with this number</p>
+                        <button class="submit_mpin ui-btn input_text confirm_button m_bottom_20" data-role="none">Confirm</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+	<!-- Onboarding Page -->
+        <div class="page_app" data-role="page" id="pageone">
+            <div class="header_yellow" data-role="header"></div>
+            <div class=" ui-content" data-role="main">
+                <img alt="FEDBANK OLLY" src="images/fedbank_logo.png" style="margin-top: 30px; width: 60%;">
+			<form class="center_content" method="post" name="onboarding1">
+                    <div class="ui-field-contain">
+                        <p style="font-weight: 200; text-shadow: none">Enter mobile
+						phone number associated with your bank account</p>
+                        <span class="span_tel" id="span_phone">+91<input class="input_tel" data-role="none" id="phone" name="fullname" pattern="((\+*)((0[ -]+)*|(91 )*)(\d{12}+|\d{10}+))|\d{5}([- ]*)\d{6}" type="tel">
+					</span>
+                        <p align="left" class="hide err" id="err_phone">No account is
+						associated with this number</p>
+                        <button class="ui-btn input_text confirm_button" data-role="none" id="submit_phone">Confirm</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="page_app" data-role="page" id="pagetwo">
+            <div class="header_yellow" data-role="header"></div>
+            <div class=" ui-content" data-role="main">
+                <img alt="FEDBANK OLLY" src="images/fedbank_logo.png" style="margin-top: 30px; width: 60%;">
+			<form class="center_content" method="post" name="onboarding2">
+                    <div class="ui-field-contain">
+                        <p style="font-weight: 200;">Enter your PIN for mobile banking</p>
+                        <span>
+                            <p id="entered_phone" style="opacity: 0.8; display: inline; font-weight: 200;">+ 91</p>
+                            <a class="link_yellow" id="change_phone">Change</a> </span> <input class="input_text" data-role="none" id="mpin" name="fullname" placeholder="MPIN" style="margin-top: 20px;" type="number">
+                        <p align="left" class="hide err" id="err_mpin" style="margin-top: -1px;">No account is associated with this number</p>
+                        <button class="submit_mpin ui-btn input_text confirm_button m_bottom_20" data-role="none">Confirm</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="page_app" data-role="page" id="pagethree">
+            <div class="header_yellow" data-role="header"></div>
+            <div class=" ui-content" data-role="main">
+                <img alt="FEDBANK OLLY" src="images/fedbank_logo.png" style="margin-top: 30px; width: 60%;">
+			<form class="center_vertical" method="post" name="onboarding2">
+                    <div class="ui-field-contain">
+                        <h2>Almost Done!</h2>
+                        <p style="font-weight: 200;">Click below to activate your
+						account</p>
+                        <button class="input_text confirm_button" data-role="none" id="activate" style="padding-left: 30%; padding-right: 30%;">Activate</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="page_app" data-role="page" id="homepage">
+            <div class="header_blue" data-role="header">
+                <div class="user" style="background-image: url('images/thumbnail.png')"></div>
+                <p id="cust_name" style="display: inline-block; vertical-align: middle; margin-left: 12px;">ABCD</p>
+            </div>
+            <div class="ui-content" data-role="main">
+                <p class="m_bottom_30" id="account_status">Account is switched
+				off</p>
+                <div class="onoffswitch">
+                    <input class="onoffswitch-checkbox " data-role="none" id="myonoffswitch" name="onoffswitch" type="checkbox"> <label class="onoffswitch-label" for="myonoffswitch"></label>
+                </div>
+            </div>
+            <div class="hide" id="countdown_timer_div" style="margin-top: 30%; font-size: 56px; display: inline-block;">
+                <div class="user" style="margin-right: -15px; margin-top: 13px; width: 30px; height: 30px; background-image: url('images/ic_timer_inactive.png')"></div>
+                <time id="countdown_timer">12:12</time>
+                <p style="margin-top: -2px;">time left until switched on</p>
+            </div>
+            <div class="hide bottom_footer" id="footer_homepage">
+                <div class="header_blue" style="text-align: left; width: 100%; display: inline-block;">
+                    <div class="user hide" id="tick_channel_state" style="width: 25px; height: 25px; background-image: url('images/ic_tick.png')"></div>
+                    <p class="hide" id="channel_state" style="display: inline-block; margin-left: 4px; font-size: 14px; color: #D1DFEB; font-weight: 300;">All activites are enabled</p>
+                    <div class="hide circleBase type1" id="fednet_status">
+                        <img src="images/ic_netbanking_off_yellow.png" style="margin-top: 12px; width: 20px; height: 20px;">
+				</div>
+                    <div class="hide circleBase type1" id="fedmobile_status">
+                        <img src="images/ic_mobilebanking_off_yellow.png" style="margin-top: 12px; width: 20px; height: 20px;">
+				</div>
+                    <div class="hide circleBase type1" id="atm_status">
+                        <img src="images/ic_card_off_yellow.png" style="margin-top: 12px; width: 20px; height: 20px;">
+				</div>
+                    <div class="user right_header" id="channel_settings" style="background-image: url('images/ic_cog.png'); border-radius: 0%; vertical-align: baseline; height: 25px; width: 25px;"></div>
+                </div>
+                <div id="timer_div" style="text-align: left; padding: 16px; width: 100%; display: inline-block; background-color: #ffffff;">
+                    <div class="user" id="timer_clock" style="margin-top: 4px; width: 45px; height: 45px; background-image: url('images/ic_timer_inactive.png')"></div>
+                    <div class="disabled_grey" id="timer_footer" style="display: inline-block; vertical-align: middle">
+                        <p class="textcolor_blue" id="timer_text">Automatic switch-off</p>
+                        <p class="color_gray" id="time_settings_text" style="margin-top: -12px; font-size: 14px;">Set timer settings</p>
+                    </div>
+                    <div class="onoffswitch_small" style="z-index: 1232; margin-right: 32px; float: right; display: inline-block; margin-top: 30px;">
+                        <input class="onoffswitch_small-checkbox" data-role="none" id="timeronoffswitch_small" name="onoffswitch_small" type="checkbox">
+					<label class="onoffswitch_small-label" for="timeronoffswitch_small"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page_app" data-role="page" id="channel_page" style="background: #fff;">
+            <div data-history="false" data-overlay-theme="a" data-role="popup" data-transition="pop" id="sure">
+                <div class="popup" style="text-align: left; margin: auto; display: block; width: 260px; background: white; padding: 20px; box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2)">
+                    <h1 class="color_gray" style="padding: 0; margin: 0; font: bold 18px/24px Roboto, sans-serif;">Switch
+					account off?</h1>
+                    <p class="color_gray" style="font: normal 14px/18px Roboto, sans-serif;">Disabling
+					your channels will turn off your account</p>
+                    <div class="buttons" style="text-align: right; margin-top: 20px">
+                        <a class="color_yellow" href="#" id="cancel_switch_off" style="font: normal 12px/16px Roboto, sans-serif; text-transform: uppercase; text-decoration: none; margin-right: 20px;">cancel</a>
+					<a class="color_yellow" id="confirm_switch_off" style="font: normal 12px/16px Roboto, sans-serif; text-transform: uppercase; text-decoration: none;">confirm</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header_blue" data-role="header">
+                <div class="user cancel" style="width: 25px; height: 25px; background-image: url('images/ic_clear.png')"></div>
+                <p id="cust_name" style="display: inline-block; margin-left: 12px; font-weight: 400; letter-spacing: 1px;">Set Channels</p>
+                <p class="save_button" id="save_channel">SAVE</p>
+            </div>
+            <div class="ui-content" data-role="main" style="background: white; padding: 0">
+                <div class="ui-field-contain" style="text-align: left;">
+                    <div class="corners_border row" style="margin-top: -6px;">
+                        <div class="user" id="ic_netbanking_image" style="border-radius: 0; width: 25px; height: 25px; background-image: url('images/ic_netbanking_on.png')"></div>
+                        <div id="netbanking_div" style="width: 69%; margin-left: 24px; display: inline-block; vertical-align: middle">
+                            <p class="textcolor_blue">FedNet channel</p>
+                            <p class="color_gray" style="margin-top: 6px; font-size: 14px;">
+							Includes all web browser based activities</p>
+                        </div>
+                        <div class="onoffswitch_small channel_switch">
+                            <input class="onoffswitch_small-checkbox" data-role="none" id="netbanking_small" name="onoffswitch_small" type="checkbox">
+						<label class="onoffswitch_small-label" for="netbanking_small"></label>
+                        </div>
+                    </div>
+                    <div class="corners_border row" style="padding-bottom: 25px; padding-top: 25px;">
+                        <div class="user" id="ic_mobilebanking_image" style="border-radius: 0; width: 25px; height: 25px; background-image: url('images/ic_mobilebanking_on.png')"></div>
+                        <div id="mobilebanking_div" style="width: 69%; margin-left: 24px; display: inline-block; vertical-align: middle">
+                            <p class="textcolor_blue">FedMobile channel</p>
+                            <p class="color_gray" style="margin-top: 6px; font-size: 14px;">
+							Activities via Federal Bank mobile apps</p>
+                        </div>
+                        <div class="onoffswitch_small channel_switch">
+                            <input class="onoffswitch_small-checkbox" data-role="none" id="mobile_banking_small" name="onoffswitch_small" type="checkbox">
+						<label class="onoffswitch_small-label" for="mobile_banking_small"></label>
+                        </div>
+                    </div>
+                    <div class="corners_border row">
+                        <div class="user" id="ic_atm_image" style="border-radius: 0; width: 25px; height: 25px; background-image: url('images/ic_card_on.png')"></div>
+                        <div id="atm_div" style="width: 69%; margin-left: 24px; display: inline-block; vertical-align: middle">
+                            <p class="textcolor_blue">ATM Transactions</p>
+                            <p class="color_gray" style="margin-top: 6px; font-size: 14px;">
+							Purchases via card in stores and online, all ATM activities</p>
+                        </div>
+                        <div class="onoffswitch_small channel_switch">
+                            <input class="onoffswitch_small-checkbox" data-role="none" id="atm_small" name="onoffswitch_small" type="checkbox"> <label class="onoffswitch_small-label" for="atm_small"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page_app" data-role="page" id="timer_settings">
+            <div data-history="false" data-overlay-theme="a" data-role="popup" data-transition="pop" id="confirm_incomplete">
+                <div class="popup" style="text-align: left; margin: auto; display: block; width: 260px; background: white; padding: 20px; box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2)">
+                    <h1 class="color_gray" id="popup_header" style="padding: 0; margin: 0; font: bold 18px/24px Roboto, sans-serif;">Settings
+					incomplete!</h1>
+                    <p class="color_gray" id="popup_message" style="font: normal 14px/18px Roboto, sans-serif;">Timer
+					setting will not be saved. Continue?</p>
+                    <div class="buttons" style="text-align: right; margin-top: 20px">
+                        <a class="color_yellow" data-rel="back" href="#" id="cancel_timer_popup" style="font: normal 12px/16px Roboto, sans-serif; text-transform: uppercase; text-decoration: none; margin-right: 20px;">cancel</a>
+					<a class="color_yellow" id="continue_timer_popup" style="font: normal 12px/16px Roboto, sans-serif; text-transform: uppercase; text-decoration: none;">continue</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header_blue" data-role="header">
+                <div class="user cancel" style="width: 25px; height: 25px; background-image: url('images/ic_clear.png')"></div>
+                <p style="display: inline-block; margin-left: 12px; font-weight: 400; letter-spacing: 1px;">Set
+				timer</p>
+                <p class="save_button" id="save_timer">SAVE</p>
+            </div>
+            <div class="ui-content" data-role="main" id="main_timer">
+                <div>
+                    <img class="img_clock" src="images/img_clock.png">
+				<h2 style="margin-top: -8px; font-weight: 200;">Set a timer</h2>
+                    <p style="font-size: 14px; font-weight: 200;">
+					Set the time for the day when you want<br> your account to be
+					switched off
+				</p>
+                </div>
+            </div>
+            <div class="bottom_footer" id="footer_timer_settings" style="padding-top: 24px; padding-bottom: 24px; background-color: #ffffff;">
+                <div style="text-align: left; padding: 24px; width: 100%; display: table;">
+                    <div style="display: table-row;">
+                        <div style="display: table-cell; width: 50%; padding: 10px;">
+                            <p class="hide" id="from_hidden_text" style="margin-top: -16px !important; margin: auto; color: #ffbe0e; font-size: 14px;">From</p>
+                            <input class="input_underline disabled_grey" data-role="none" id="start_time" placeholder="From" style="padding: 8px 0; margin-top: 0px; width: 70%; text-align: center; border-color: #D1DFEB" type="text">
+                        </div>
+                        <div style="display: table-cell; width: 50%; padding: 10px;">
+                            <p class="hide" id="to_hidden_text" style="margin-top: -16px !important; margin: auto; color: #ffbe0e; font-size: 14px;">To</p>
+                            <input class="input_underline disabled_grey" data-role="none" id="end_time" placeholder="To" style="padding: 8px 0; margin-top: 0px; width: 70%; text-align: center; border-color: #D1DFEB" type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page_app" data-role="page" id="fednet_pageone" style="background: #f2f4f5;">
+            <div class="header_blue" data-role="header" style="text-align: center; padding-bottom: 16px;">
+                <img src="images/ic_steppers_1.png" style="margin-top: 20px; width: 40px;">
+			<p id="" style="margin-left: 12px; font-weight: 400;">
+				Let Olly access your FedNet <br> banking
+			</p>
+            </div>
+            <div class="ui-content color_gray" data-role="main">
+                <form method="post" name="fednet_onboarding1" style="margin-top: 10%">
+                    <div class="ui-field-contain">
+                        <p class="color_gray" style="font-weight: 200;">Enter your
+						FedNet ID</p>
+                        <input class="blue_border input_text" data-role="none" id="fednet_id" type="number">
+                        <p align="left" class="hide err" id="err_fednet_id">No account
+						is associated with this number</p>
+                        <button class="ui-btn input_text confirm_button" data-role="none" id="submit_fednet_id" style="margin-bottom: 20px;">Confirm</button>
+					<a class="link_yellow" id="skip_fednet" style="font-weight: 400">Skip
+						this for now</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="page_app" data-role="page" id="fednet_pagetwo" style="background: #f2f4f5;">
+            <div class="header_blue" data-role="header" style="text-align: center; padding-bottom: 16px;">
+                <img class="header_image" src="images/ic_steppers_1.png" style="margin-top: 20px; width: 40px;">
+			<p class="header_text" style="margin-left: 12px; font-weight: 400;">
+				Let Olly access your FedNet <br> banking
+			</p>
+            </div>
+            <div class="ui-content color_gray" data-role="main">
+                <form method="post" name="fednet_onboarding1" style="margin-top: 10%">
+                    <div class="ui-field-contain">
+                        <p class="color_gray" id="limit_text" style="font-weight: 200;">
+						Do you want to set a amount limit for your <br>FedNet
+						transactions?
+					</p>
+                        <button class="ui-btn input_text confirm_button" data-role="none" id="set_limit_fednet" style="margin-top: 20px; margin-bottom: 20px;">Set a limit</button>
+					<a class="link_yellow" id="skip_limit_fednet" style="font-weight: 400">Not Now</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+	<!-- 	Set Limit FedNet -->
+        <div class="page_app" data-role="page" id="limit_fednet_page" style="background: #f2f4f5;">
+            <div class="header_blue" data-role="header">
+                <div class="user cancel" style="width: 25px; height: 25px; background-image: url('images/ic_clear.png')"></div>
+                <p style="display: inline-block; margin-left: 12px; font-weight: 400; letter-spacing: 1px;">Set
+				limits</p>
+                <p class="save_button" id="save_limit_fednet">SAVE</p>
+            </div>
+            <div class="ui-content color_gray" data-role="main">
+                <form class="center_vertical" method="post" name="onboarding2" style="text-align: left;">
+                    <div class="ui-field-contain">
+                        <p class="textcolor_blue" style="font-weight: 200;">Enter
+						amount limit</p>
+                        <input class="input_underline" data-role="none" id="fednet_limit_amount" placeholder="" style="" type="number">
+                        <p align="left" class="hide err" id="err_fednet_limit">No
+						account is associated with this number</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+	<!-- 	Confirm Limit FedNet -->
+        <div class="page_app" data-role="page" id="confirm_limit_fednet_page" style="background: #f2f4f5;">
+            <div class="header_blue" data-role="header" style="text-align: center; padding-bottom: 16px;">
+                <img class="header_image" src="images/ic_steppers_1.png" style="margin-top: 20px; width: 40px;">
+			<p class="header_text" style="margin-left: 12px; font-weight: 400;">
+				Let Olly access your FedNet <br> banking
+			</p>
+            </div>
+            <div class="ui-content color_gray" data-role="main">
+                <form method="post" name="fednet_onboarding1" style="margin-top: 10%">
+                    <div class="ui-field-contain">
+                        <p class="color_gray" id="transaction_text" style="font-weight: 200;">Transactions through FedNet limited
+						to</p>
+                        <span>
+                            <p class="color_gray" id="selected_limit_fednet" style="font-size: 18px; font-weight: 200; display: inline">₹ 200</p> 
+                            <a class="link_yellow" id="change_limit_fednet">Change</a></span>
+					<button class="ui-btn input_text confirm_button" data-role="none" id="confirm_limit_fednet" style="margin-top: 20px; margin-bottom: 20px;">Confirm</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="page_app" data-role="page" id="fednet_pagethree" style="background: #f2f4f5;">
+            <div class="header_blue" data-role="header" style="text-align: center; padding-bottom: 16px;">
+                <img class="header_image" src="images/ic_steppers_1.png" style="margin-top: 20px; width: 40px;">
+			<p class="header_text" style="margin-left: 12px; font-weight: 400;">
+				Let Olly access your FedNet <br> banking
+			</p>
+            </div>
+            <div class="ui-content color_gray" data-role="main">
+                <form method="post" name="fednet_onboarding1" style="margin-top: 10%">
+                    <div class="ui-field-contain">
+                        <p class="color_gray" style="font-weight: 200;">
+						Enter your Mobile PIN to secure your <br>settings
+					</p>
+                        <input class="blue_border input_text" data-role="none" id="mpin_fednet" type="number">
+                        <p align="left" class="hide err" id="err_mpin_fednet">No
+						account is associated with this number</p>
+                        <button class="submit_mpin ui-btn input_text confirm_button" data-role="none">Confirm</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+	<!-- 	ATM CARDS Onboarding -->
+        <div class="page_app" data-role="page" id="atm_pageone" style="background: #f2f4f5;">
+            <div class="header_blue" data-role="header" style="text-align: center; padding-bottom: 16px;">
+                <img src="images/ic_steppers_3.png" style="margin-top: 20px; width: 40px;">
+			<p id="" style="margin-left: 12px; font-weight: 400;">
+				Let Olly access your ATM Card <br> transactions
+			</p>
+            </div>
+            <div class="ui-content color_gray" data-role="main">
+                <form method="post" name="atm_onboarding1" style="margin-top: 10%">
+                    <div class="ui-field-contain">
+                        <p class="color_gray" style="font-weight: 200;">Enter last 4
+						digits of your card</p>
+                        <input class="blue_border input_text" data-role="none" id="card_number" type="number">
+                        <p align="left" class="hide err" id="err_atm_id">No account is
+						associated with this number</p>
+                        <button class="ui-btn input_text confirm_button" data-role="none" id="submit_card_number" style="margin-bottom: 20px;">Confirm</button>
+					<a class="link_yellow" id="skip_atm" style="font-weight: 400">Skip
+						this for now</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="page_app" data-role="page" id="atm_pagetwo" style="background: #f2f4f5;">
+            <div class="header_blue" data-role="header" style="text-align: center; padding-bottom: 16px;">
+                <img class="header_image" src="images/ic_steppers_3.png" style="margin-top: 20px; width: 40px;">
+			<p class="header_text" style="margin-left: 12px; font-weight: 400;">
+				Let Olly access your ATM Card <br> transactions
+			</p>
+            </div>
+            <div class="ui-content color_gray" data-role="main">
+                <form method="post" name="fednet_onboarding1" style="margin-top: 10%">
+                    <div class="ui-field-contain">
+                        <p class="color_gray" id="limit_text" style="font-weight: 200;">
+						Do you want to set a amount limit for your <br>ATM card
+						transactions?
+					</p>
+                        <button class="ui-btn input_text confirm_button" data-role="none" id="set_limit_atm" style="margin-top: 20px; margin-bottom: 20px;">Set a limit</button>
+					<a class="link_yellow" id="skip_limit_atm" style="font-weight: 400">Not
+						Now</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="page_app" data-role="page" id="limit_atm_page" style="background: #f2f4f5;">
+            <div class="header_blue" data-role="header">
+                <div class="user cancel" style="width: 25px; height: 25px; background-image: url('images/ic_clear.png')"></div>
+                <p style="display: inline-block; margin-left: 12px; font-weight: 400; letter-spacing: 1px;">Set
+				limits</p>
+                <p class="save_button" id="save_limit_atm">SAVE</p>
+                <br>
+                <div style="text-align: center;">
+                    <p id="card_number_display" style="display: inline-block; margin-left: 12px; font-weight: 400; letter-spacing: 1px;">sasa</p>
+                    <a class="link_yellow" id="remove_card">Remove Card</a>
+                </div>
+            </div>
+            <div class="ui-content color_gray" data-role="main">
+                <form class="center_vertical" method="post" name="onboarding2" style="text-align: left;">
+                    <div class="ui-field-contain">
+                        <p class="textcolor_blue" style="font-size: 14px; font-weight: 200;">Enter amount limit</p>
+                        <input class="input_underline" data-role="none" id="atm_limit_amount" placeholder="" style="" type="number">
+                        <p align="left" class="hide err" id="err_atm_limit">No account
+						is associated with this number</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="page_app" data-role="page" id="confirm_limit_atm_page" style="background: #f2f4f5;">
+            <div class="header_blue" data-role="header" style="text-align: center; padding-bottom: 16px;">
+                <img class="header_image" src="images/ic_steppers_3.png" style="margin-top: 20px; width: 40px;">
+			<p class="header_text" style="margin-left: 12px; font-weight: 400;">
+				Let Olly access your ATM card <br> transactions
+			</p>
+            </div>
+            <div class="ui-content color_gray" data-role="main">
+                <form method="post" name="fednet_onboarding1" style="margin-top: 10%">
+                    <div class="ui-field-contain">
+                        <p class="color_gray" id="transaction_text_atm" style="font-weight: 200;">Transactions through ATM Card ****
+						2009 limited to</p>
+                        <div id="hidden_div_cards"></div>
+                        <button class="ui-btn input_text confirm_button" data-role="none" id="confirm_limit_atm" style="margin-top: 20px; margin-bottom: 20px;">Confirm</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="page_app" data-role="page" id="atm_pagethree" style="background: #f2f4f5;">
+            <div class="header_blue" data-role="header" style="text-align: center; padding-bottom: 16px;">
+                <img class="header_image" src="images/ic_steppers_3.png" style="margin-top: 20px; width: 40px;">
+			<p class="header_text" style="margin-left: 12px; font-weight: 400;">
+				Let Olly access your ATM card <br> transactions
+			</p>
+            </div>
+            <div class="ui-content color_gray" data-role="main">
+                <form method="post" name="atm_onboarding1" style="margin-top: 10%">
+                    <div class="ui-field-contain">
+                        <p class="color_gray" style="font-weight: 200;">
+						Enter your Mobile PIN to secure your <br>settings
+					</p>
+                        <input class="blue_border input_text" data-role="none" id="atm_mpin" type="number">
+                        <p align="left" class="hide err" id="err_atm_mpin">No account
+						is associated with this number</p>
+                        <button class="ui-btn input_text confirm_button" data-role="none" id="submit_atm_mpin">Confirm</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="js/initOptions.js"></script>
+	<script src="js/messages.js"></script>
+	<script src="js/jquery-epulse.js"></script>
+	<script src="js/main.js"></script>
+    </body>
+</html>

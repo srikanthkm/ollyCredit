@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Olly">
+        <wb-resource deploy-path="/" source-path="/apps/Olly/common"/>
+        <wb-resource deploy-path="/" source-path="/apps/n/common"/>
+        <wb-resource deploy-path="/" source-path="/apps/Olly/android"/>
+        <wb-resource deploy-path="/" source-path="/apps/test/common"/>
+        <wb-resource deploy-path="/" source-path="/apps/Olly_Submit/common"/>
+        <wb-resource deploy-path="/" source-path="/apps/Olly_Submit/android"/>
+        <wb-resource deploy-path="/" source-path="/apps/m/common"/>
+        <property name="context-root" value="Olly"/>
+    </wb-module>
+</project-modules>

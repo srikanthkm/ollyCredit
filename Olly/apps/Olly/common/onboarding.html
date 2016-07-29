@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="fedbank.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="onboarding.js"></script>
+</head>
+<body style="text-align: center">
+
+<div data-role="page" id="pageone">
+    <div data-role="header">
+        <h1>Olly On-boarding</h1>
+    </div>
+
+    <div data-role="main" class="center_content ui-content">
+        <form name="onboarding1" method="post">
+            <div class="ui-field-contain">
+                <input type="text" pattern="((\+*)((0[ -]+)*|(91 )*)(\d{12}+|\d{10}+))|\d{5}([- ]*)\d{6}"
+                       placeholder="Enter phone number" name="fullname" id="phone" required>
+                <a onclick="submitform()" class="ui-btn ui-btn-inline">Submit</a>
+            </div>
+        </form>
+    </div>
+
+    <!--<div data-role="footer" class="bottom_footer">-->
+    <!--<h1>Footer Text</h1>-->
+    <!--</div>-->
+</div>
+
+<div data-role="page" id="pagetwo">
+    <div data-role="header">
+        <h1>Olly On-boarding</h1>
+    </div>
+
+    <div data-role="main" class="center_content ui-content">
+        <form name="onboarding2" method="post">
+            <div class="ui-field-contain">
+                <input type="number" placeholder="Enter MPIN" name="fullname" id="mpin" required>
+                <a onclick="submitmpin()" class="ui-btn ui-btn-inline">Submit</a>
+            </div>
+        </form>
+    </div>
+
+    <!--<div data-role="footer" class="bottom_footer">-->
+    <!--<h1>Footer Text</h1>-->
+    <!--</div>-->
+</div>
+
+<div data-role="page" id="pagethree">
+    <div data-role="header">
+        <h1>Olly On-boarding</h1>
+    </div>
+
+    <div data-role="main" class="center_content ui-content">
+        <form name="onboarding2" method="post">
+            <div class="ui-field-contain">
+                <a onclick="submitmpin()" class="ui-btn ui-btn-inline">Activate</a>
+            </div>
+        </form>
+    </div>
+
+    <!--<div data-role="footer" class="bottom_footer">-->
+    <!--<h1>Footer Text</h1>-->
+    <!--</div>-->
+</div>
+</body>
+</html>

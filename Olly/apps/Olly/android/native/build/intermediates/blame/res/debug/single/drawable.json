@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/apple/Documents/workspace/FEDbank/Fedbank_Olly/apps/Olly/android/native/build/intermediates/res/merged/debug/drawable/splash.9.png",
+        "source": "/Users/apple/Documents/workspace/FEDbank/Fedbank_Olly/apps/Olly/android/native/res/drawable/splash.9.png"
+    },
+    {
+        "merged": "/Users/apple/Documents/workspace/FEDbank/Fedbank_Olly/apps/Olly/android/native/build/intermediates/res/merged/debug/drawable/push.png",
+        "source": "/Users/apple/Documents/workspace/FEDbank/Fedbank_Olly/apps/Olly/android/native/res/drawable/push.png"
+    },
+    {
+        "merged": "/Users/apple/Documents/workspace/FEDbank/Fedbank_Olly/apps/Olly/android/native/build/intermediates/res/merged/debug/drawable/icon.png",
+        "source": "/Users/apple/Documents/workspace/FEDbank/Fedbank_Olly/apps/Olly/android/native/res/drawable/icon.png"
+    }
+]

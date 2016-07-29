@@ -1,0 +1,444 @@
+[
+    {
+        "outputFile": "/Users/apple/Documents/workspace/FEDbank/Fedbank_Olly/apps/Olly/android/native/build/intermediates/res/merged/debug/values-he/values-he.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 52,
+                    "endOffset": 103
+                },
+                "from": {
+                    "file": "/Users/apple/Documents/workspace/FEDbank/Fedbank_Olly/apps/Olly/android/native/res/values-he/strings.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 2,
+                        "startOffset": 647,
+                        "endColumn": 50,
+                        "endOffset": 695
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 108,
+                    "endColumn": 41,
+                    "endOffset": 145
+                },
+                "from": {
+                    "file": "/Users/apple/Documents/workspace/FEDbank/Fedbank_Olly/apps/Olly/android/native/res/values-he/strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 2,
+                        "startOffset": 63,
+                        "endColumn": 39,
+                        "endOffset": 100
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 150,
+                    "endColumn": 40,
+                    "endOffset": 186
+                },
+                "from": {
+                    "file": "/Users/apple/Documents/workspace/FEDbank/Fedbank_Olly/apps/Olly/android/native/res/values-he/strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 2,
+                        "startOffset": 274,
+                        "endColumn": 38,
+                        "endOffset": 310
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 191,
+                    "endColumn": 62,
+                    "endOffset": 249
+                },
+                "from": {
+                    "file": "/Users/apple/Documents/workspace/FEDbank/Fedbank_Olly/apps/Olly/android/native/res/values-he/strings.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 2,
+                        "startOffset": 951,
+                        "endColumn": 60,
+                        "endOffset": 1009
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 254,
+                    "endColumn": 39,
+                    "endOffset": 289
+                },
+                "from": {
+                    "file": "/Users/apple/Documents/workspace/FEDbank/Fedbank_Olly/apps/Olly/android/native/res/values-he/strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 2,
+                        "startOffset": 236,
+                        "endColumn": 37,
+                        "endOffset": 271
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 294,
+                    "endColumn": 97,
+                    "endOffset": 387
+                },
+                "from": {
+                    "file": "/Users/apple/Documents/workspace/FEDbank/Fedbank_Olly/apps/Olly/android/native/res/values-he/strings.xml",
+                    "position": {
+                        "startLine": 30,
+                        "startColumn": 2,
+                        "startOffset": 1426,
+                        "endColumn": 95,
+                        "endOffset": 1519
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 392,
+                    "endColumn": 97,
+                    "endOffset": 485
+                },
+                "from": {
+                    "file": "/Users/apple/Documents/workspace/FEDbank/Fedbank_Olly/apps/Olly/android/native/res/values-he/strings.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 2,
+                        "startOffset": 1232,
+                        "endColumn": 95,
+                        "endOffset": 1325
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 490,
+                    "endColumn": 39,
+                    "endOffset": 525
+                },
+                "from": {
+                    "file": "/Users/apple/Documents/workspace/FEDbank/Fedbank_Olly/apps/Olly/android/native/res/values-he/strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 2,
+                        "startOffset": 198,
+                        "endColumn": 37,
+                        "endOffset": 233
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 530,
+                    "endColumn": 142,
+                    "endOffset": 668
+                },
+                "from": {
+                    "file": "/Users/apple/Documents/workspace/FEDbank/Fedbank_Olly/apps/Olly/android/native/res/values-he/strings.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 2,
+                        "startOffset": 760,
+                        "endColumn": 140,
+                        "endOffset": 898
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 673,
+                    "endColumn": 49,
+                    "endOffset": 718
+                },
+                "from": {
+                    "file": "/Users/apple/Documents/workspace/FEDbank/Fedbank_Olly/apps/Olly/android/native/res/values-he/strings.xml",
+                    "position": {
+                        "startLine": 31,
+                        "startColumn": 2,
+                        "startOffset": 1522,
+                        "endColumn": 47,
+                        "endOffset": 1567
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 723,
+                    "endColumn": 70,
+                    "endOffset": 789
+                },
+                "from": {
+                    "file": "/Users/apple/Documents/workspace/FEDbank/Fedbank_Olly/apps/Olly/android/native/res/values-he/strings.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 2,
+                        "startOffset": 578,
+                        "endColumn": 68,
+                        "endOffset": 644
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 794,
+                    "endColumn": 56,
+                    "endOffset": 846
+                },
+                "from": {
+                    "file": "/Users/apple/Documents/workspace/FEDbank/Fedbank_Olly/apps/Olly/android/native/res/values-he/strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 2,
+                        "startOffset": 105,
+                        "endColumn": 54,
+                        "endOffset": 157
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 851,
+                    "endColumn": 51,
+                    "endOffset": 898
+                },
+                "from": {
+                    "file": "/Users/apple/Documents/workspace/FEDbank/Fedbank_Olly/apps/Olly/android/native/res/values-he/strings.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 2,
+                        "startOffset": 901,
+                        "endColumn": 49,
+                        "endOffset": 948
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 903,
+                    "endColumn": 116,
+                    "endOffset": 1015
+                },
+                "from": {
+                    "file": "/Users/apple/Documents/workspace/FEDbank/Fedbank_Olly/apps/Olly/android/native/res/values-he/strings.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 2,
+                        "startOffset": 412,
+                        "endColumn": 114,
+                        "endOffset": 524
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 1020,
+                    "endColumn": 63,
+                    "endOffset": 1079
+                },
+                "from": {
+                    "file": "/Users/apple/Documents/workspace/FEDbank/Fedbank_Olly/apps/Olly/android/native/res/values-he/strings.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 2,
+                        "startOffset": 698,
+                        "endColumn": 61,
+                        "endOffset": 757
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 1084,
+                    "endColumn": 52,
+                    "endOffset": 1132
+                },
+                "from": {
+                    "file": "/Users/apple/Documents/workspace/FEDbank/Fedbank_Olly/apps/Olly/android/native/res/values-he/strings.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 2,
+                        "startOffset": 527,
+                        "endColumn": 50,
+                        "endOffset": 575
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1137,
+                    "endColumn": 71,
+                    "endOffset": 1204
+                },
+                "from": {
+                    "file": "/Users/apple/Documents/workspace/FEDbank/Fedbank_Olly/apps/Olly/android/native/res/values-he/strings.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 2,
+                        "startOffset": 1328,
+                        "endColumn": 69,
+                        "endOffset": 1395
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1209,
+                    "endColumn": 52,
+                    "endOffset": 1257
+                },
+                "from": {
+                    "file": "/Users/apple/Documents/workspace/FEDbank/Fedbank_Olly/apps/Olly/android/native/res/values-he/strings.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 2,
+                        "startOffset": 1126,
+                        "endColumn": 50,
+                        "endOffset": 1174
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1262,
+                    "endColumn": 56,
+                    "endOffset": 1314
+                },
+                "from": {
+                    "file": "/Users/apple/Documents/workspace/FEDbank/Fedbank_Olly/apps/Olly/android/native/res/values-he/strings.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 2,
+                        "startOffset": 1177,
+                        "endColumn": 54,
+                        "endOffset": 1229
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1319,
+                    "endColumn": 60,
+                    "endOffset": 1375
+                },
+                "from": {
+                    "file": "/Users/apple/Documents/workspace/FEDbank/Fedbank_Olly/apps/Olly/android/native/res/values-he/strings.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 2,
+                        "startOffset": 1067,
+                        "endColumn": 58,
+                        "endOffset": 1123
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1380,
+                    "endColumn": 113,
+                    "endOffset": 1489
+                },
+                "from": {
+                    "file": "/Users/apple/Documents/workspace/FEDbank/Fedbank_Olly/apps/Olly/android/native/res/values-he/strings.xml",
+                    "position": {
+                        "startLine": 34,
+                        "startColumn": 2,
+                        "startOffset": 1632,
+                        "endColumn": 111,
+                        "endOffset": 1741
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1494,
+                    "endColumn": 146,
+                    "endOffset": 1636
+                },
+                "from": {
+                    "file": "/Users/apple/Documents/workspace/FEDbank/Fedbank_Olly/apps/Olly/android/native/res/values-he/strings.xml",
+                    "position": {
+                        "startLine": 35,
+                        "startColumn": 2,
+                        "startOffset": 1744,
+                        "endColumn": 144,
+                        "endOffset": 1886
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 1641,
+                    "endColumn": 61,
+                    "endOffset": 1698
+                },
+                "from": {
+                    "file": "/Users/apple/Documents/workspace/FEDbank/Fedbank_Olly/apps/Olly/android/native/res/values-he/strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 2,
+                        "startOffset": 352,
+                        "endColumn": 59,
+                        "endOffset": 409
+                    }
+                }
+            }
+        ]
+    }
+]

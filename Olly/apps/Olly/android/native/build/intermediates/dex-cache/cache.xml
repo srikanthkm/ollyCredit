@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/apple/Documents/workspace/FEDbank/Fedbank_Olly/apps/Olly/android/native/libs/cordova.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="20d40a20e5ebf06d3b6ccb55491955e02b058b49">
+        <dex dex="/Users/apple/Documents/workspace/FEDbank/Fedbank_Olly/apps/Olly/android/native/build/intermediates/pre-dexed/debug/cordova_90e98a13aabd2af053c95611c409951d3cab4ca8.jar" />
+    </item>
+    <item
+        jar="/Users/apple/Documents/workspace/FEDbank/Fedbank_Olly/apps/Olly/android/native/libs/bcprov.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="b6f5d9926b0afbde9f4dbe3db88c5247be7794bb">
+        <dex dex="/Users/apple/Documents/workspace/FEDbank/Fedbank_Olly/apps/Olly/android/native/build/intermediates/pre-dexed/debug/bcprov_b6a5c3fa29214222195f2eb6f104a1a4da8e062b.jar" />
+    </item>
+    <item
+        jar="/Users/apple/Documents/workspace/FEDbank/Fedbank_Olly/apps/Olly/android/native/libs/android-async-http.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="f70e680861fdf9449819003e7799a4e9aca047f8">
+        <dex dex="/Users/apple/Documents/workspace/FEDbank/Fedbank_Olly/apps/Olly/android/native/build/intermediates/pre-dexed/debug/android-async-http_b0325bb25c4add403a995c38d14f0c4628bd3cba.jar" />
+    </item>
+    <item
+        jar="/Users/apple/Documents/workspace/FEDbank/Fedbank_Olly/apps/Olly/android/native/libs/worklight-android.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="7422712b117c2410d15fd3e34f0cffa2104a5aa9">
+        <dex dex="/Users/apple/Documents/workspace/FEDbank/Fedbank_Olly/apps/Olly/android/native/build/intermediates/pre-dexed/debug/worklight-android_632983a7ea70bbfac1787d384b5d0960ff2467d1.jar" />
+    </item>
+
+</items>
